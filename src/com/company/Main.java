@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.Arrays;
+import java.util.Iterator;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,7 +18,8 @@ public class Main {
         result = ds.decompress();
         checkDecompress("aaaaaaaaaaphphph", result);
         */
-        LakeVolume lv = new LakeVolume();
+
+        /*LakeVolume lv = new LakeVolume();
         int[] heights = {1,3,2,4,1,3,1,4,5,2,2,1,4,2,2};
         int totalVolume = lv.volumeOfLake(heights);
         //System.out.println(totalVolume);
@@ -24,6 +28,22 @@ public class Main {
         totalVolume = lv.volumeOfLake(heights2);
         //System.out.println(totalVolume);
         checkLakeVolume(6, totalVolume);
+         */
+
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {4, 5};
+        int[] arr3 = {6, 7, 8, 9};
+        Iterator<Integer> a = Arrays.stream(arr1).iterator();
+        Iterator<Integer> b = Arrays.stream(arr2).iterator();
+        Iterator<Integer> c = Arrays.stream(arr3).iterator();
+        Iterator<Integer>[] iterlist = new Iterator[]{a, b, c};
+
+        IF itfl = new IF(iterlist);
+        while(itfl.hasNext()){
+            //itfl.next();
+            System.out.print(itfl.next());
+        }
+
     }
 
     public static void checkDecompress(String expected, String actual){
