@@ -30,7 +30,7 @@ public class Main {
         checkLakeVolume(6, totalVolume);
          */
 
-        int[] arr1 = {1, 2, 3};
+        /*int[] arr1 = {1, 2, 3};
         int[] arr2 = {4, 5};
         int[] arr3 = {6, 7, 8, 9};
         Iterator<Integer> a = Arrays.stream(arr1).iterator();
@@ -43,6 +43,13 @@ public class Main {
             //itfl.next();
             System.out.print(itfl.next());
         }
+         */
+
+        FindLongestWord flw = new FindLongestWord();
+        String s = "abppplee";
+        String[] words = {"able", "ale", "apple", "bale", "kangaroo"};
+
+        System.out.println(flw.checkWords(s, words));
 
     }
 
